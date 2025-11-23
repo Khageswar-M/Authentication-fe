@@ -17,7 +17,7 @@ const LoggedUsers = () => {
     }, []);
 
     useEffect(() => {
-        axios.get(`http:${import.meta.env.VITE_APP_BASE_URL}${import.meta.env.VITE_APP_USER_INOFO}`, { withCredentials: true })
+        axios.get(`http:${import.meta.env.VITE_APP_BASE_URL}${import.meta.env.VITE_APP_USER_INFO}`, { withCredentials: true })
             .then(response => {
                 setUser(response.data);
 
