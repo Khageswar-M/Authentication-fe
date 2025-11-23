@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="Authentication App Logo - Shield">
+  <title>Authentication App Logo - Shield</title>
+  <desc>Minimal shield with keyhole mark. Transparent background. Uses currentColor for easy theming.</desc>
+  <g fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Shield outline -->
+    <path d="M128 16c-36 0-72 10-96 28v76c0 62 46 117 96 144c50-27 96-82 96-144V44c-24-18-60-28-96-28z"/>
+    <!-- Keyhole: circle + slot -->
+    <circle cx="128" cy="114" r="22" fill="currentColor" stroke="none"/>
+    <path d="M128 136v40" />
+  </g>
+</svg>
