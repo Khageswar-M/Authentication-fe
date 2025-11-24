@@ -20,7 +20,7 @@ const Settings = ({ onClose }) => {
             console.log("🔄 Logging out:", user.email);
 
             // 1️⃣ Delete user from backend database
-            const response = await axios.delete(`http:${import.meta.env.VITE_APP_BASE_URL}${import.meta.env.VITE_APP_LOGOUT}`, {
+            const response = await axios.delete(`https:${import.meta.env.VITE_APP_BASE_URL}${import.meta.env.VITE_APP_LOGOUT}`, {
                 params: { email: user.email },
                 withCredentials: true
             });

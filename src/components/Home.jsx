@@ -43,11 +43,11 @@ const Home = () => {
   };
 
   const googleLogin = () => {
-    window.location.href = `http:${import.meta.env.VITE_APP_BASE_URL}${import.meta.env.VITE_APP_AUTHORIZATION_GOOGLE}`;
+    window.location.href = `https:${import.meta.env.VITE_APP_BASE_URL}${import.meta.env.VITE_APP_AUTHORIZATION_GOOGLE}`;
   };
 
   const githubLogin = () => {
-    window.location.href = `http:${import.meta.env.VITE_APP_BASE_URL}${import.meta.env.VITE_APP_AUTHORIZATION_GITHUB}`;
+    window.location.href = `https:${import.meta.env.VITE_APP_BASE_URL}${import.meta.env.VITE_APP_AUTHORIZATION_GITHUB}`;
   };
 
   // --- Reusable Button Content/Spinner ---

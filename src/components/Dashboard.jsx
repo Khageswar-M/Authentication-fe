@@ -50,7 +50,7 @@ const Dashboard = () => {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const res = await axios.get(`http:${import.meta.env.VITE_APP_BASE_URL}${import.meta.env.VITE_APP_ALL_USERS}`, { withCredentials: true });
+                const res = await axios.get(`https:${import.meta.env.VITE_APP_BASE_URL}${import.meta.env.VITE_APP_ALL_USERS}`, { withCredentials: true });
 
                 const dbUsers = res.data.map((u) => ({
                     id: (u.email || u.name)
