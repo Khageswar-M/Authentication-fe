@@ -22,7 +22,7 @@ const LoggedUsers = () => {
         )
             .then(response => {
                 setUser(response.data);
-
+                console.log(user);
                 const { name } = response.data;
 
                 // console.log(response.data);
