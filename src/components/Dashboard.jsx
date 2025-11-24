@@ -119,7 +119,7 @@ const Dashboard = () => {
 
         let ws;
         const connectWS = () => {
-            ws = new WebSocket(`ws:${import.meta.env.VITE_APP_BASE_URL}${import.meta.env.VITE_APP_PRESENCE}${userId}`);
+            ws = new WebSocket(`wss:${import.meta.env.VITE_APP_BASE_URL}${import.meta.env.VITE_APP_PRESENCE}${userId}`);
             ws.onopen = () => console.log("✅ WebSocket connected");
             ws.onclose = (e) => {
                 console.log("❌ WebSocket disconnected", e.reason);
